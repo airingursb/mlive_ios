@@ -161,12 +161,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/../../flutter_module_google/.ios/Flutter/engine/Flutter.framework"
-  install_framework "${PODS_ROOT}/../../flutter_module_google/.ios/Flutter/App.framework"
+  install_framework "${PODS_ROOT}/../../fb_modulex/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${PODS_ROOT}/../../fb_modulex/.ios/Flutter/App.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_boost/flutter_boost.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/../../flutter_module_google/.ios/Flutter/engine/Flutter.framework"
-  install_framework "${PODS_ROOT}/../../flutter_module_google/.ios/Flutter/App.framework"
+  install_framework "${PODS_ROOT}/../../fb_modulex/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${PODS_ROOT}/../../fb_modulex/.ios/Flutter/App.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_boost/flutter_boost.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

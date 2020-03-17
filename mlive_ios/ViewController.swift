@@ -8,6 +8,7 @@
 
 import UIKit
 import Flutter
+import flutter_boost
 
 class ViewController: UIViewController {
   override func viewDidLoad() {
@@ -23,9 +24,14 @@ class ViewController: UIViewController {
   }
 
   @objc func showFlutter() {
-    let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
-    let flutterViewController =
-        FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
-    present(flutterViewController, animated: true, completion: nil)
+    FlutterBoostPlugin.open("homeManager", urlParams:[kPageCallBackId:"MycallbackId#1"], exts: ["animated":true], onPageFinished: { (_ result:Any?) in
+        print(String(format:"call me when page finished, and your result is:%@", result as! CVarArg));
+    }) { (f:Bool) in
+        print(String(format:"page is opened"));
+    }
+//    let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+//    let flutterViewController =
+//        FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+//    present(flutterViewController, animated: true, completion: nil)
   }
 }

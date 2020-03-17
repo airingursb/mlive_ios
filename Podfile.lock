@@ -1,28 +1,35 @@
 PODS:
+  - fb_modulex (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
-  - flutter_module_google (0.0.1):
+  - flutter_boost (0.0.2):
     - Flutter
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+    - flutter_boost
 
 DEPENDENCIES:
-  - Flutter (from `../flutter_module_google/.ios/Flutter/engine`)
-  - flutter_module_google (from `../flutter_module_google/.ios/Flutter`)
-  - FlutterPluginRegistrant (from `../flutter_module_google/.ios/Flutter/FlutterPluginRegistrant`)
+  - fb_modulex (from `../fb_modulex/.ios/Flutter`)
+  - Flutter (from `../fb_modulex/.ios/Flutter/engine`)
+  - flutter_boost (from `../fb_modulex/.ios/Flutter/.symlinks/flutter_boost/ios`)
+  - FlutterPluginRegistrant (from `../fb_modulex/.ios/Flutter/FlutterPluginRegistrant`)
 
 EXTERNAL SOURCES:
+  fb_modulex:
+    :path: "../fb_modulex/.ios/Flutter"
   Flutter:
-    :path: "../flutter_module_google/.ios/Flutter/engine"
-  flutter_module_google:
-    :path: "../flutter_module_google/.ios/Flutter"
+    :path: "../fb_modulex/.ios/Flutter/engine"
+  flutter_boost:
+    :path: "../fb_modulex/.ios/Flutter/.symlinks/flutter_boost/ios"
   FlutterPluginRegistrant:
-    :path: "../flutter_module_google/.ios/Flutter/FlutterPluginRegistrant"
+    :path: "../fb_modulex/.ios/Flutter/FlutterPluginRegistrant"
 
 SPEC CHECKSUMS:
+  fb_modulex: 4c349b5b60a0ab305e2837ac80828473a9db359b
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_module_google: cc9ce5cb4ed0f298f7f5667b0a53567f8a7f6ce5
-  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  flutter_boost: a7cfa776b75329d5e7d101d0cd33e75042bcde69
+  FlutterPluginRegistrant: 717df6b322c7d500c17eeff54284c74ed5410c7b
 
-PODFILE CHECKSUM: e78da04fffb9a0d89b7ebfd0ce1b68c5de241fdc
+PODFILE CHECKSUM: 8d35dbc52c4283aff78fd0bf39c78d0d0b3bff23
 
 COCOAPODS: 1.8.4

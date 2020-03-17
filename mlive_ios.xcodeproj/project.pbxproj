@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94CFB0ADCDB00C10C8442EDB /* Pods_mlive_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27497F53A8CAAA188DDECF8 /* Pods_mlive_ios.framework */; };
+		678CE4A887C2FC8187968214 /* Pods_mlive_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8589E418DC6499C32F7C62 /* Pods_mlive_ios.framework */; };
 		9D32D50F2420E7BC0032B542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D50E2420E7BC0032B542 /* AppDelegate.swift */; };
 		9D32D5112420E7BC0032B542 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D5102420E7BC0032B542 /* SceneDelegate.swift */; };
 		9D32D5132420E7BC0032B542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D5122420E7BC0032B542 /* ViewController.swift */; };
@@ -16,6 +16,9 @@
 		9D32D51B2420E7BF0032B542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D32D5192420E7BF0032B542 /* LaunchScreen.storyboard */; };
 		9D32D5262420E7BF0032B542 /* mlive_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D5252420E7BF0032B542 /* mlive_iosTests.swift */; };
 		9D32D5312420E7BF0032B542 /* mlive_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D5302420E7BF0032B542 /* mlive_iosUITests.swift */; };
+		9D32D53F242118ED0032B542 /* PlatformRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D53E242118ED0032B542 /* PlatformRouterImp.swift */; };
+		9D32D54124211E1B0032B542 /* flutter_boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D32D54024211E1B0032B542 /* flutter_boost.framework */; };
+		9D32D54324211E1E0032B542 /* FlutterPluginRegistrant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D32D54224211E1E0032B542 /* FlutterPluginRegistrant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,11 @@
 		9D32D52C2420E7BF0032B542 /* mlive_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mlive_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D32D5302420E7BF0032B542 /* mlive_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mlive_iosUITests.swift; sourceTree = "<group>"; };
 		9D32D5322420E7BF0032B542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B27497F53A8CAAA188DDECF8 /* Pods_mlive_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mlive_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D32D53E242118ED0032B542 /* PlatformRouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformRouterImp.swift; sourceTree = "<group>"; };
+		9D32D54024211E1B0032B542 /* flutter_boost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = flutter_boost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D32D54224211E1E0032B542 /* FlutterPluginRegistrant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlutterPluginRegistrant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D32D54424211E430032B542 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA8589E418DC6499C32F7C62 /* Pods_mlive_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mlive_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5508BC7DAE1B2EC1BF47F0D /* Pods-mlive_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlive_ios.debug.xcconfig"; path = "Target Support Files/Pods-mlive_ios/Pods-mlive_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		FB6253BC86BDB8376A535F33 /* Pods-mlive_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlive_ios.release.xcconfig"; path = "Target Support Files/Pods-mlive_ios/Pods-mlive_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CFB0ADCDB00C10C8442EDB /* Pods_mlive_ios.framework in Frameworks */,
+				9D32D54324211E1E0032B542 /* FlutterPluginRegistrant.framework in Frameworks */,
+				9D32D54124211E1B0032B542 /* flutter_boost.framework in Frameworks */,
+				678CE4A887C2FC8187968214 /* Pods_mlive_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,14 +96,15 @@
 				D5508BC7DAE1B2EC1BF47F0D /* Pods-mlive_ios.debug.xcconfig */,
 				FB6253BC86BDB8376A535F33 /* Pods-mlive_ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		6646FE5CC9A4D62FA95B48D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B27497F53A8CAAA188DDECF8 /* Pods_mlive_ios.framework */,
+				9D32D54224211E1E0032B542 /* FlutterPluginRegistrant.framework */,
+				9D32D54024211E1B0032B542 /* flutter_boost.framework */,
+				BA8589E418DC6499C32F7C62 /* Pods_mlive_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +141,8 @@
 				9D32D5172420E7BF0032B542 /* Assets.xcassets */,
 				9D32D5192420E7BF0032B542 /* LaunchScreen.storyboard */,
 				9D32D51C2420E7BF0032B542 /* Info.plist */,
+				9D32D54424211E430032B542 /* Runner-Bridging-Header.h */,
+				9D32D53E242118ED0032B542 /* PlatformRouterImp.swift */,
 			);
 			path = mlive_ios;
 			sourceTree = "<group>";
@@ -161,11 +173,11 @@
 			buildConfigurationList = 9D32D5352420E7BF0032B542 /* Build configuration list for PBXNativeTarget "mlive_ios" */;
 			buildPhases = (
 				5B5AAD04C1D891F3E2980BA6 /* [CP] Check Pods Manifest.lock */,
-				1CE0A6540D8EFB15B0B38165 /* [CP-User] Run Flutter Build Script */,
+				5F90FC432067B3131418C3BF /* [CP-User] Run Flutter Build Script */,
 				9D32D5072420E7BC0032B542 /* Sources */,
 				9D32D5082420E7BC0032B542 /* Frameworks */,
 				9D32D5092420E7BC0032B542 /* Resources */,
-				E8E73E053D43E3D38E526E2B /* [CP] Embed Pods Frameworks */,
+				537FB57F43BBFEB38994BEEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +236,7 @@
 				TargetAttributes = {
 					9D32D50A2420E7BC0032B542 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					9D32D5202420E7BF0032B542 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -283,21 +296,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CE0A6540D8EFB15B0B38165 /* [CP-User] Run Flutter Build Script */ = {
+		537FB57F43BBFEB38994BEEF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/../flutter_module_google/.metadata",
-				"${SRCROOT}/../flutter_module_google/.ios/Flutter/App.framework/App",
-				"${SRCROOT}/../flutter_module_google/.ios/Flutter/engine/Flutter.framework/Flutter",
-				"${SRCROOT}/../flutter_module_google/.ios/Flutter/flutter_export_environment.sh",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mlive_ios/Pods-mlive_ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP-User] Run Flutter Build Script";
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mlive_ios/Pods-mlive_ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module_google/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mlive_ios/Pods-mlive_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		5B5AAD04C1D891F3E2980BA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -321,22 +335,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E8E73E053D43E3D38E526E2B /* [CP] Embed Pods Frameworks */ = {
+		5F90FC432067B3131418C3BF /* [CP-User] Run Flutter Build Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mlive_ios/Pods-mlive_ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${SRCROOT}/../fb_modulex/.metadata",
+				"${SRCROOT}/../fb_modulex/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../fb_modulex/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../fb_modulex/.ios/Flutter/flutter_export_environment.sh",
 			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mlive_ios/Pods-mlive_ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
+			name = "[CP-User] Run Flutter Build Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mlive_ios/Pods-mlive_ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../fb_modulex/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -347,6 +360,7 @@
 			files = (
 				9D32D5132420E7BC0032B542 /* ViewController.swift in Sources */,
 				9D32D50F2420E7BC0032B542 /* AppDelegate.swift in Sources */,
+				9D32D53F242118ED0032B542 /* PlatformRouterImp.swift in Sources */,
 				9D32D5112420E7BC0032B542 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +535,7 @@
 			baseConfigurationReference = D5508BC7DAE1B2EC1BF47F0D /* Pods-mlive_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX8NZ6G6FX;
 				INFOPLIST_FILE = mlive_ios/Info.plist;
@@ -530,6 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.ursb.mlive-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,6 +556,7 @@
 			baseConfigurationReference = FB6253BC86BDB8376A535F33 /* Pods-mlive_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CX8NZ6G6FX;
 				INFOPLIST_FILE = mlive_ios/Info.plist;
