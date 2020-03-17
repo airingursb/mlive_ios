@@ -1,0 +1,6 @@
+framework module Pods_mlive_ios {
+  umbrella header "Pods-mlive_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
